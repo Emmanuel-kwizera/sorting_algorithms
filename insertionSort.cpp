@@ -21,7 +21,7 @@ void insertionSort(int arr[], int n){
 void printArray(int arr[], int n){
     int i;
     for (i = 0; i < n; i++)
-        cout << arr[i] << " ";
+        cout << arr[i] << "  ";
     cout << endl;
 }
 
@@ -30,7 +30,13 @@ int main(){
     int n = sizeof(arr) / sizeof(arr[0]);
  
     insertionSort(arr, n);
+    cout<<"\t\t\t======================================================= "<<endl;
+    cout<<"\t\t\t||                SORTED ARRAY                       || "<<endl;
+    cout<<"\t\t\t======================================================= "<<endl;
+    cout<<"\t\t\t\t";
     printArray(arr, n);
+    cout<<"\t\t\t======================================================= "<<endl;
  
     return 0;
 }
+
